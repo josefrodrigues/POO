@@ -1,4 +1,9 @@
+/*
+*Foi implementado todos os metodos e classes
+*Implementado ArrayList verificar associação 0..*
+*/
 package fatec.poo.model;
+import java.util.ArrayList;
 
 /**
  *
@@ -6,11 +11,13 @@ package fatec.poo.model;
  */
 public class Vendedor extends Pessoa{
     private double salarioBase, taxaComissão;
-    //Falta implementar ArrayList
-
+    private ArrayList<Pedido> pedidos;
+    
     public Vendedor(String cpf, String nome, double salarioBase) {
         super(cpf, nome);
         this.salarioBase = salarioBase;
+        this.pedidos = new ArrayList();
+        
     }
 
     public double getSalarioBase() {
@@ -27,6 +34,9 @@ public class Vendedor extends Pessoa{
 
     public void setTaxaComissão(double taxaComissão) {
         this.taxaComissão = taxaComissão;
+    }
+    public void addPedido(Pedido p){
+        this.pedidos.add(p);
     }
     
 }

@@ -1,5 +1,7 @@
 package fatec.poo.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author gabriel
@@ -7,7 +9,7 @@ package fatec.poo.model;
 public class Pedido {
     private String numero, dataEmissao, dataPagto;
     private boolean formaPagto, situacao;
-    //falta ArrayList
+    private ArrayList<ItemPedido> itens;
     
     public Pedido(String numero, String dataEmissao) {
         this.numero = numero;
@@ -46,6 +48,9 @@ public class Pedido {
         return situacao;
     }
     
-        
     
+    public void addItemPedido(ItemPedido p){
+        this.itens.add(p);
+        
+    }    
 }

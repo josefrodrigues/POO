@@ -1,3 +1,6 @@
+/*
+*Classe pessoa está pronta!
+*/
 package fatec.poo.model;
 
 /**

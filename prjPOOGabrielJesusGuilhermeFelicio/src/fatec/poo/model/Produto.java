@@ -1,3 +1,8 @@
+/*
+*Implementado todos os metodos
+*Classe pronta!
+*/
+
 package fatec.poo.model;
 
 /**
